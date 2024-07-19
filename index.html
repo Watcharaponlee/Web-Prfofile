@@ -9,38 +9,51 @@
     </style>
     <link href="./public/output.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <nav class=" p-4 ">
         <div class="border-b-2 pb-4 pt-0 border-black container mx-auto flex justify-between items-center">
             <div class="flex items-center flex-shrink-0 text-black mr-6">
-                <span class="font-semibold text-xl tracking-tight ">My Profile</span>
+                <span class="font-light text-xl tracking-tight ">Watcharapon Leelawatcharamas</span>
             </div>
-            <div class="block lg:hidden">
-                <button
-                    class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white">
-                    <svg class="h-3 w-3 fill-current" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path
-                            d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-                </button>
-            </div>
-            <div class="flex items-center">
-                <img src="./image/watcharapon.JPG"
-                    class="rounded-xl h-10 w-10 object-cover mr-2">
-                <span class="text-black">Watcharapon Leelawatcharamas</span>
-        </div>
     </nav>
 
-    <div class="container mx-auto px-4 pt-7 pb-16 border-b-2 border-black ">
-        <h1 class="text-8xl font-bold"><ins>NEW</ins> Graduated in Modern Management and Information Technology <br /> At Chiangmai University.</h1>
+    <div class="container mx-auto px-4 pt-7 pb-14 border-b-2 border-black text-center">
+        <h1 class="text-8xl font-bold"><ins>Welcome</ins> to My Web-Profile
     </div>
 
-    <div class="justify-end container mx-auto px-4 border-b-2 border-black pb-4 pt-4">
-        <h1 class="text-5xl font-bold underline">About</h1>
-        <p class="mt-4">
-            I am a new graduated in Modern Management and Information Technology at Chiangmai University.
-        </p>
-    </div>
+    <section class="container mx-auto p-8 flex flex-col md:flex-row border-b-2 border-black items-center">
+        <!-- รูปภาพ -->
+        <div class="w-full md:w-1/2 flex justify-center mb-4 md:mb-0">
+            <img src="./image/watcharapon_3.jpg" alt="Profile Picture" class="rounded-xl shadow-lg">
+        </div>
+        <!-- หัวข้อและเนื้อหา -->
+        <div class="w-full md:w-1/2 md:pl-8 border-l-2 border-black">
+            <h2 class="text-5xl font-bold mb-4 underline">About Me</h2>
+            <p class=" mb-2 text-xl font-normal">
+                <strong>Hello</strong> , My name is Watcharapon Leelawatcharamas. 
+                I am currently learning and practicing web-developer skills, 
+                aiming to start a career in the tech industry.
+            </p>
+            <p class="mb-2 text-xl font-normal">
+                I have been dedicating my time to studying various web-programming languages and tools, including HTML&CSS, JavaScript, vue.js, react.js and Tailwind CSS.
+            </p>
+            <p class="mb-2 text-xl font-normal">
+                Although I am new to the field, I am passionate about learning and improving my skills. I have been working on personal projects and contributing to open source to gain practical experience.
+            </p>
+            <p class="mb-2 text-xl font-normal">
+                <strong>My goal</strong> is to become a web developer and contribute to projects.
+            </p>
+            <p class="mt-4 text-2xl font-semibold">
+                Feel free to contact me at :
+            </p>
+            <p class="text-xl font-normal">
+                Email : watcharapon.lee@gmail.com<br />Tel : 094-197-9156
+            </p>
+        </div>
+    </section>
+
 
 </body>
 </html>
@@ -50,5 +63,9 @@ body{
     font-family: 'Kanit', sans-serif;
     font-style: normal;
     background-color: rgb(229 231 235);
+}
+img{
+    /* width: 30rem; */
+    height: 33rem;
 }
 </style>
