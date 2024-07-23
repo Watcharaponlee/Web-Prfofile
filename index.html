@@ -24,10 +24,10 @@
     </nav>
 
     <div class="container mx-auto px-4 pt-7 pb-14 border-b-2 border-black text-center ">
-        <h1 class="text-8xl font-bold fade-in"><ins>Welcome</ins> to My Web-Profile
+        <h1 class="text-8xl font-bold fade-in gradient-text">Welcome to My Web-Profile
     </div>
-
-    <section class="container mx-auto p-8 flex flex-col md:flex-row m-10 border-b-2 border-black items-center">
+ 
+    <section class="container mx-auto py-14 px-3 flex flex-col md:flex-row border-b-2 border-black items-center">
         <!-- รูปภาพ -->
         <div class="w-full md:w-1/2 flex justify-center mb-4 md:mb-0 animate__animated animate__fadeInLeft">
             <img src="./image/watcharapon_3.jpg" alt="Profile Picture" class="rounded-xl shadow-lg">
@@ -58,12 +58,12 @@
         </div>
     </section>
 
-    <div class="container mx-auto pb-14 border-b-2 border-black">
-        <h1 class="text-5xl font-bold text-center">History</h1>
-        <div class=" grid grid-cols-1 md:grid-cols-2 mt-10 justify-items-center">
+      <div class="container mx-auto  py-14 border-b-2 border-black">
+        <h1 class="text-5xl font-bold text-center  fadeUp">History</h1>
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-2 mt-10 justify-items-center  fadeUp">
           <!-- Education Section -->
           <div class="w-11/12">
-            <h2 class="text-2xl font-semibold text-center mb-5">Education</h2>
+            <h2 class="text-3xl font-semibold text-center mb-5">Education</h2>
             <div class="space-y-5 text-lg">
                 <div class="p-3 border-2 border-gray-700 rounded-lg hover:bg-purple-400 hover:text-white transition-all duration-300 ease-in-out hover:scale-105">
                     <p class="">2020 - 2023</p>
@@ -81,7 +81,7 @@
     
           <!-- Experience Section -->
           <div class="w-11/12">
-            <h2 class="text-2xl font-semibold text-center mb-5">Work Experience</h2>
+            <h2 class="text-3xl font-semibold text-center mb-5">Work Experience</h2>
             <div class="space-y-5 text-lg">
                 <div class="p-3 border-2 border-gray-700 rounded-lg hover:bg-green-700 hover:text-white transition-all duration-300 ease-in-out hover:scale-105">
                 <p class="">September 2023 - January 2024</p>
@@ -101,10 +101,72 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="container mx-auto py-14 border-b-2 border-black">
+        <h1 class="text-5xl font-bold text-center mb-10">Skills</h1>
+        <div class="flex flex-col items-center gap-10">
+            <!-- Languages Section -->
+            <div class="w-full max-w-5xl">
+                <h2 class="text-3xl font-semibold text-center mb-5">Languages</h2>
+                <div class="flex flex-wrap justify-center gap-20">
+                    <!-- First Row -->
+                    <div class="flex flex-col items-center w-1/2 max-w-xs ">
+                        <div class="skill-card">
+                            <img src="./image/htm-logo.png" alt="HTML Logo" class="w-20 h-20">
+                            <span class="text-gray-700 text-2xl font-semibold ml-4">HTML</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="./image/css-logo.png" alt="CSS Logo" class="w-20 h-20">
+                            <span class="text-gray-700 text-2xl font-semibold ml-4">CSS</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="./image/js-logo.png" alt="JavaScript Logo" class="w-20 h-20">
+                            <span class="text-gray-700 text-2xl font-semibold ml-4">JavaScript</span>
+                        </div>
+                    </div>
+                    <!-- Second Row -->
+                    <div class="flex flex-col items-center w-1/2 max-w-xs">
+                        <div class="skill-card">
+                            <img src="./image/vue-logo.png" alt="Vue.js Logo" class="w-20 h-20">
+                            <span class="text-gray-700 text-2xl font-semibold ml-4">Vue.js</span>
+                        </div>
+                        <div class="skill-card w-26">
+                            <img src="./image/node-logo.png" alt="Node.js Logo" class="">
+                            <span class="text-gray-700 text-2xl font-semibold ml-4">Node.js</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="./image/tailwind-logo.png" alt="Tailwind CSS Logo" class="w-24 h-20">
+                            <span class="text-gray-700 text-2xl font-semibold ml-4">Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools Section -->
+            <div class="w-72 max-w-lg">
+                <h2 class="text-3xl font-semibold text-center mb-5">Tools</h2>
+                <div class="space-y-5 text-lg">
+                    <div class="skill-card">
+                        <img src="./image/postman.svg" alt="Postman Logo" class="w-20 h-20">
+                        <span class="text-gray-700 text-2xl font-semibold ml-4">Postman</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="./image/figma-logo.png" alt="Figma Logo" class="w-20 h-20">
+                        <span class="text-gray-700 text-2xl font-semibold ml-4">Figma</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="./image/github-logo.png" alt="Github Logo" class="w-20 h-20">
+                        <span class="text-gray-700 text-2xl font-semibold ml-4">Github</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-                        
-</body>
+      <button id="backToTop" onclick="scrollToTop()">&#8679;</button>
+      <script src="main.js"></script>
+  </body>
 </html>
 
 <style>
@@ -113,12 +175,37 @@ body{
     font-style: normal;
     background-color: rgb(229 231 235);
 }
+
 img{
     /* width: 30rem; */
     height: 33rem;
 }
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 30px;
+    z-index: 999;
+}
+
+#backToTop.show {
+    display: block;
+}
+
 .hover\:scale-105:hover {
-      transform: scale(1.05);
+      transform: scale(1.10);
     }
 
 @keyframes fadeIn {
@@ -133,7 +220,63 @@ img{
 .fade-in {
   animation: fadeIn 1s ease-in-out;
 }
+
 .animate__animated.animate__fadeIn {
   --animate-duration: 2s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeUp{
+  animation: fadeUp 1.5s ease-in-out;
+}
+
+.skill-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 20rem;
+    transition: background 0.4s ease, transform 0.4s ease;
+    margin-bottom: 1rem;
+}
+
+.skill-card img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.skill-card span {
+    color: #4a5568;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+.skill-card:hover {
+    background: linear-gradient(to right, rgba(205, 86, 241, 0.733), #387dff);
+    transform: scale(1.05);
+}
+.skill-card:hover span {
+    color: #fff;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #13265a, #5170d3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 </style>
