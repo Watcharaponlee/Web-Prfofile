@@ -7,7 +7,6 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
-    <!-- <link href="./public/output.css" rel="stylesheet"> -->
     <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link
@@ -16,7 +15,7 @@
   />
 </head>
 <body>
-    <nav class=" p-4 ">
+    <nav class="p-4 ">
         <div class="border-b-2 pb-4 pt-0 border-black container mx-auto flex justify-between items-center">
             <div class="flex items-center flex-shrink-0 text-black mr-6">
                 <span class="font-light text-xl tracking-tight">Watcharapon Leelawatcharamas</span>
@@ -28,14 +27,12 @@
     </div>
  
     <section class="container mx-auto py-14 px-3 flex flex-col md:flex-row border-b-2 border-black items-center">
-        <!-- รูปภาพ -->
         <div class="w-full md:w-1/2 flex justify-center mb-4 md:mb-0 animate__animated animate__fadeInLeft">
             <img src="./image/watcharapon_3.jpg" alt="Profile Picture" class="rounded-xl shadow-lg">
         </div>
-        <!-- หัวข้อและเนื้อหา -->
         <div class="w-full md:w-1/2 md:pl-8 border-black text-justify animate__animated animate__fadeInRight">
-            <h2 class="text-5xl font-bold mb-4 ">About Me</h2>
-            <p class=" mb-2 text-xl font-normal ">
+            <h2 class="text-5xl font-bold mb-4">About Me</h2>
+            <p class=" mb-2 text-xl font-normal">
                 <strong>Hello</strong> , My name is Watcharapon Leelawatcharamas. 
                 I am currently learning and practicing web-developer skills, 
                 aiming to start a career in the tech industry.
@@ -56,8 +53,8 @@
                 Email : watcharapon.lee@gmail.com<br />Tel : 094-197-9156
             </p>
         </div>
-    </section>
-
+    
+      </section>
       <div class="container mx-auto  py-14 border-b-2 border-black">
         <h1 class="text-5xl font-bold text-center  fadeUp">History</h1>
         <div class="grid grid-cols-1 gap-10 md:grid-cols-2 mt-10 justify-items-center  fadeUp">
@@ -103,66 +100,94 @@
         </div>
       </div>
 
-      <div class="container mx-auto py-14 border-b-2 border-black">
-        <h1 class="text-5xl font-bold text-center mb-10">Skills</h1>
-        <div class="flex flex-col items-center gap-10">
-            <!-- Languages Section -->
-            <div class="w-full max-w-5xl">
-                <h2 class="text-3xl font-semibold text-center mb-5">Languages</h2>
-                <div class="flex flex-wrap justify-center gap-20">
-                    <!-- First Row -->
-                    <div class="flex flex-col items-center w-1/2 max-w-xs ">
-                        <div class="skill-card">
-                            <img src="./image/htm-logo.png" alt="HTML Logo" class="w-20 h-20">
-                            <span class="text-gray-700 text-2xl font-semibold ml-4">HTML</span>
-                        </div>
-                        <div class="skill-card">
-                            <img src="./image/css-logo.png" alt="CSS Logo" class="w-20 h-20">
-                            <span class="text-gray-700 text-2xl font-semibold ml-4">CSS</span>
-                        </div>
-                        <div class="skill-card">
-                            <img src="./image/js-logo.png" alt="JavaScript Logo" class="w-20 h-20">
-                            <span class="text-gray-700 text-2xl font-semibold ml-4">JavaScript</span>
-                        </div>
-                    </div>
-                    <!-- Second Row -->
-                    <div class="flex flex-col items-center w-1/2 max-w-xs">
-                        <div class="skill-card">
-                            <img src="./image/vue-logo.png" alt="Vue.js Logo" class="w-20 h-20">
-                            <span class="text-gray-700 text-2xl font-semibold ml-4">Vue.js</span>
-                        </div>
-                        <div class="skill-card w-26">
-                            <img src="./image/node-logo.png" alt="Node.js Logo" class="">
-                            <span class="text-gray-700 text-2xl font-semibold ml-4">Node.js</span>
-                        </div>
-                        <div class="skill-card">
-                            <img src="./image/tailwind-logo.png" alt="Tailwind CSS Logo" class="w-24 h-20">
-                            <span class="text-gray-700 text-2xl font-semibold ml-4">Tailwind CSS</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="container mx-auto py-14 border-b-2 border-black text-center">
+        <h1 class="text-3xl font-bold pb-10 text-5xl ">Languages and Tools</h1>
+        <div class="grid grid-cols-4 gap-4">
+            <div class="p-4 flex items-center justify-center skill-card">
+                <img src="./image/htm-logo.png" alt="html" class="h-32">
             </div>
-
-            <!-- Tools Section -->
-            <div class="w-72 max-w-lg">
-                <h2 class="text-3xl font-semibold text-center mb-5">Tools</h2>
-                <div class="space-y-5 text-lg">
-                    <div class="skill-card">
-                        <img src="./image/postman.svg" alt="Postman Logo" class="w-20 h-20">
-                        <span class="text-gray-700 text-2xl font-semibold ml-4">Postman</span>
-                    </div>
-                    <div class="skill-card">
-                        <img src="./image/figma-logo.png" alt="Figma Logo" class="w-20 h-20">
-                        <span class="text-gray-700 text-2xl font-semibold ml-4">Figma</span>
-                    </div>
-                    <div class="skill-card">
-                        <img src="./image/github-logo.png" alt="Github Logo" class="w-20 h-20">
-                        <span class="text-gray-700 text-2xl font-semibold ml-4">Github</span>
-                    </div>
-                </div>
+            <div class="p-4 flex items-center justify-center skill-card">
+                <img src="./image/css-logo.png" alt="css" class="h-32">
+            </div>
+            <div class="p-4 flex items-center justify-center skill-card">
+                <img src="./image/js-logo.png" alt="Js" class="h-32">
+            </div>
+            <div class="p-4 flex items-center justify-center skill-card">
+                <img src="./image/vue-logo.png" alt="Vue" class="h-32">
+            </div>
+            
+            <div class="p-4 flex items-center justify-center skill-card">
+                <img src="./image/node-logo.png" alt="node" class="h-32">
+            </div>
+            <div class="p-4 flex items-center justify-center skill-card">
+                <img src="./image/tailwind-logo.png" alt="tailwind" class="h-24">
+            </div>
+            <div class="p-4 flex items-center justify-center skill-card">
+                <img src="./image/postman.svg" alt="postman" class="h-32">
+            </div>
+            <div class="p-4 flex items-center justify-center skill-card">
+                <img src="./image/github-logo.png" alt="github" class="h-32">
+            </div>
+            <div class="p-4 flex items-center justify-center skill-card">
+                <img src="./image/figma-logo.png" alt="figma" class="h-32" >
             </div>
         </div>
     </div>
+    
+    <div class="container mx-auto text-center pt-14 ">
+      <h1 class="text-5xl font-bold pb-10">Certificate</h1>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slides">
+          <div class="slide">
+            <div class="image-wrapper">
+              <img src="./image/no-image.png" alt="Image 1">
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image-wrapper">
+              <img src="./image/no-image.png" alt="Image 2">
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image-wrapper">
+              <img src="./image/no-image.png" alt="Image 3">
+            </div>
+          </div>
+        </div>
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+  </div>
+</div>
+  
+  <footer class="container mx-auto border-t-2 border-black pt-5">
+    <h1 class="text-5xl text-center font-bold  ">Contact</h1>
+    <div class="container mx-auto flex justify-center space-x-4 gap-5 py-2">
+      <!-- ปุ่ม LinkedIn -->
+      <a href="https://www.linkedin.com/in/%E0%B8%A7%E0%B8%B1%E0%B8%8A%E0%B8%A3%E0%B8%9E%E0%B8%A5-%E0%B8%A5%E0%B8%B5%E0%B8%A5%E0%B8%B2%E0%B8%A7%E0%B8%B1%E0%B8%8A%E0%B8%A3%E0%B8%A1%E0%B8%B2%E0%B8%A8-2a40182a7/" target="_blank" 
+        class="flex items-center space-x-1 transition-transform transform hover:scale-110">
+          <!-- โลโก้ LinkedIn -->
+          <img src="./image/linkedin.png" alt="LinkedIn Logo" class="w-16 h-16" />
+      </a>
+      <!-- ปุ่ม GitHub -->
+      <a href="https://github.com/Watcharaponlee" target="_blank" 
+        class="flex items-center space-x-1 transition-transform transform hover:scale-110">
+          <!-- โลโก้ GitHub -->
+          <img src="./image/github-logo.png" alt="GitHub Logo" class="w-24 h-24" />
+      </a>
+    </div>
+      <div class="pb-5">
+        <p class="flex items-center justify-center gap-2 text-xl">
+          <img src="./image/email.png" alt="email" class="w-10 h-10">
+          watcharaponlee@gmail.com
+        </p>
+        <p class="flex items-center justify-center gap-2 pt-2 text-xl">
+          <img src="./image/phone-call.png" alt="email" class="w-10 h-10">
+          094-197-9156
+        </p>
+      </div>
+  </footer>
 
       <button id="backToTop" onclick="scrollToTop()">&#8679;</button>
       <script src="main.js"></script>
@@ -244,19 +269,11 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
     padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 20rem;
-    transition: background 0.4s ease, transform 0.4s ease;
+    transition: 0.3s ease, transform 0.3s ease;
     margin-bottom: 1rem;
-}
-
-.skill-card img {
-    width: 5rem;
-    height: 5rem;
 }
 
 .skill-card span {
@@ -267,16 +284,90 @@ img{
 }
 
 .skill-card:hover {
-    background: linear-gradient(to right, rgba(205, 86, 241, 0.733), #387dff);
-    transform: scale(1.05);
-}
-.skill-card:hover span {
-    color: #fff;
+    transform: scale(1.15);
 }
 
 .gradient-text {
     background: linear-gradient(135deg, #13265a, #5170d3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3.5rem;
+}
+
+.slider {
+    position: relative;
+    width: 60vw; /* ขนาดที่ต้องการ, ปรับตามต้องการ */
+    height: 50vh; /* ขนาดความสูง */
+    overflow: hidden;
+    border: 2px solid #ddd; /* ขอบเพื่อให้เห็นชัดเจน */
+    border-radius: 10px; /* มุมโค้ง */
+    background-color: #e9e9e9;
+}
+
+/* สไตล์ของ slides */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* สไตล์ของ image-wrapper */
+.image-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%; /* ขนาดที่ต้องการให้น้อยกว่าพื้นหลัง */
+    height: auto;
+}
+
+.image-wrapper img {
+    width: 100%; /* ทำให้รูปภาพเติมเต็ม wrapper */
+    height: auto;
+    object-fit: contain; /* ทำให้ภาพไม่เสียอัตราส่วน */
+}
+
+/* ปุ่มนำทาง */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(95, 94, 94, 0.5);
+    color: white;
+    border: none;
+    width: 50px; /* ขนาดของปุ่ม */
+    height: 50px; /* ขนาดของปุ่ม */
+    border-radius: 50%; /* ทำให้ปุ่มเป็นวงกลม */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.5rem; /* ขนาดของสัญลักษณ์ */
+    z-index: 10;
+    transition: background-color 0.3s ease; /* เพิ่มความลื่นไหลในการเปลี่ยนสี */
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* สีเข้มขึ้นเมื่อ hover */
 }
 </style>
