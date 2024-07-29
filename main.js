@@ -38,3 +38,13 @@ function prevSlide() {
 }
 
 setInterval(nextSlide, 5000);
+
+function showCard(cardId) {
+    document.getElementById('overlay').classList.remove('hidden');
+    document.getElementById(cardId).classList.remove('hidden');
+}
+function hideCard() {
+    document.getElementById('overlay').classList.add('hidden');
+    document.getElementById('card1').classList.add('hidden');
+    document.getElementById('card2').classList.add('hidden');
+}

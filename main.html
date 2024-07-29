@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-lg mx-auto">
+        <div class="bg-white shadow-md rounded-lg p-4 mb-4">
+            <h2 class="text-xl font-semibold">Work Experience</h2>
+            <ul>
+                <li class="border-b border-gray-200 py-2">
+                    <button onclick="showCard('card1')" class="focus:outline-none text-left w-full">
+                        <div class="flex justify-between items-center">
+                            <span>Company A</span>
+                            <span class="text-gray-500">&#9660;</span>
+                        </div>
+                    </button>
+                </li>
+                <li class="border-b border-gray-200 py-2">
+                    <button onclick="showCard('card2')" class="focus:outline-none text-left w-full">
+                        <div class="flex justify-between items-center">
+                            <span>Company B</span>
+                            <span class="text-gray-500">&#9660;</span>
+                        </div>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center">
+        <div id="card1" class="bg-white rounded-lg shadow-lg p-6 w-3/4 max-w-md hidden">
+            <button onclick="hideCard()" class="absolute top-2 right-2 text-gray-700">&#10005;</button>
+            <h3 class="text-xl font-semibold mb-4">Company A</h3>
+            <p class="text-gray-600">Job Role: Developer</p>
+            <p class="text-gray-600">Duration: 2020-2022</p>
+            <p class="text-gray-600">Description: Worked on various web development projects.</p>
+        </div>
+        <div id="card2" class="bg-white rounded-lg shadow-lg p-6 w-3/4 max-w-md hidden">
+            <button onclick="hideCard()" class="absolute top-2 right-2 text-gray-700">&#10005;</button>
+            <h3 class="text-xl font-semibold mb-4">Company B</h3>
+            <p class="text-gray-600">Job Role: Designer</p>
+            <p class="text-gray-600">Duration: 2018-2020</p>
+            <p class="text-gray-600">Description: Designed various user interfaces and graphics.</p>
+        </div>
+    </div>
+
+    <script>
+        function showCard(cardId) {
+            document.getElementById('overlay').classList.remove('hidden');
+            document.getElementById(cardId).classList.remove('hidden');
+        }
+
+        function hideCard() {
+            document.getElementById('overlay').classList.add('hidden');
+            document.getElementById('card1').classList.add('hidden');
+            document.getElementById('card2').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
